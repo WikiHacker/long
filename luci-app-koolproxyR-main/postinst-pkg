@@ -1,0 +1,6 @@
+#!/bin/sh
+if [ -z "${IPKG_INSTROOT}" ]; then
+	( . /etc/uci-defaults/luci-koolproxy ) && rm -f /etc/uci-defaults/luci-koolproxy
+	rm -f /tmp/luci-indexcache
+fi
+exit 0

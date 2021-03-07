@@ -1,0 +1,12 @@
+Package: luci-app-koolproxyR
+Version: 3.8.5-1-20201105
+Depends: libc, openssl-util, ipset, dnsmasq-full, iptables-mod-nat-extra, wget
+Source: package/luci-app-koolproxyR-main
+SourceName: luci-app-koolproxyR
+License: GPLv3
+LicenseFiles: LICENSE
+Section: luci
+Maintainer: panda-mute
+Architecture: x86_64
+Installed-Size: 0
+Description:  This package contains LuCI configuration pages for koolproxy.
