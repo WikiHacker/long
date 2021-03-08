@@ -1,5 +1,0 @@
-
-config gost
-	option enable '1'
-	option run_command '-L=socks5://admin:123456@:8099
-
