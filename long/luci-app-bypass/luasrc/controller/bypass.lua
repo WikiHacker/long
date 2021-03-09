@@ -12,7 +12,7 @@ function index()
 	local e=entry({"admin","services","bypass"},firstchild(),_("Bypass"),2)
 	e.dependent=false
 	e.acl_depends={ "luci-app-bypass" }
-	entry({"admin","services","bypass","base"},cbi("bypass/base"),_("Base Setting"),0).leaf=true
+	entry({"admin","services","bypass","base"},cbi("bypass/base"),_("Base Setting"),1).leaf=true
 	entry({"admin","services","bypass","servers"},arcombine(cbi("bypass/servers",{autoapply=true}),cbi("bypass/client-config")),_("Severs Nodes"),2).leaf=true
 	entry({"admin","services","bypass","control"},cbi("bypass/control"),_("Access Control"),3).leaf=true
 	entry({"admin","services","bypass","advanced"},cbi("bypass/advanced"),_("Advanced Settings"),4).leaf=true
