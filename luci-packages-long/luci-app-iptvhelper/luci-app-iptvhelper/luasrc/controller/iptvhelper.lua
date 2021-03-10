@@ -8,7 +8,7 @@ function index()
 		return
 	end
 
-	local page = entry({"admin", "services", "iptvhelper"}, cbi("iptvhelper"), _("IPTV Helper"),98)
+	local page = entry({"admin", "services", "iptvhelper"}, cbi("iptvhelper"), _("IPTV Helper"))
 	page.dependent = true
 
 end

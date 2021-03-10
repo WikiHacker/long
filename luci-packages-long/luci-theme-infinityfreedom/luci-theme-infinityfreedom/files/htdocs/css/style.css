@@ -2,7 +2,7 @@
 *	InfinityFreedom is a clean HTML5 theme for LuCI. It is based on luci-theme-material.
 *
 *	luci-theme-infinityfreedom
-*	Copyright 2020 Richard Yu <xiaoqingfengatgm@gmail.com>
+*	Copyright 2020-2021 Richard Yu <xiaoqingfengatgm@gmail.com>
 *
 *	Have a bug? Please create an issue here on GitHub!
 *	https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/issues
@@ -2193,6 +2193,20 @@ pre#beamInDocker_download_log_viewer {
 
 #cbi-beamInDocker-beam-beamInDocker_status > div ,
 #cbi-beamInDocker-beam-version > div
+{
+	display: block;
+	padding-top:6px;
+}
+
+/* For luci-app-softethervpn */
+div#cbi-softethervpn.cbi-map .cbi-value div.cbi-value-field font.softethervpn_status
+{
+	display: block;
+	padding-top:6px;
+}
+
+/* For luci-app-homeconnect */
+div#cbi-homeconnect.cbi-map .cbi-value div.cbi-value-field font.softethervpn_status
 {
 	display: block;
 	padding-top:6px;

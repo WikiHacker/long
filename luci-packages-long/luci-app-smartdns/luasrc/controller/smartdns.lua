@@ -23,7 +23,7 @@ function index()
 	end
 
 	local page
-	page = entry({"admin", "services", "smartdns"}, cbi("smartdns/smartdns"), _("SmartDNS"), 3)
+	page = entry({"admin", "services", "smartdns"}, cbi("smartdns/smartdns"), _("SmartDNS"), 60)
 	page.dependent = true
 	page = entry({"admin", "services", "smartdns", "status"}, call("act_status"))
 	page.leaf = true
