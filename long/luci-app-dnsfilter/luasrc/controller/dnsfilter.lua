@@ -3,7 +3,7 @@ function index()
 	if not nixio.fs.access("/etc/config/dnsfilter") then
 		return
 	end
-	local e=entry({"admin","services","dnsfilter"},firstchild(),_("DNSFilter"),1)
+	local e=entry({"admin","services","dnsfilter"},firstchild(),_("DNSFilter"),3)
 	e.dependent=false
 	e.acl_depends={ "luci-app-dnsfilter" }
 	entry({"admin","services","dnsfilter","base"},cbi("dnsfilter/base"),_("Base Setting"),3).leaf=true
